@@ -42,7 +42,7 @@ while True:
 
 # Ask the user if they want to perform another operation
     while True:
-        ask_user = input("Do you want to perform another operation? (y/n): ").strip().lower()
+        ask_user = input("Do you want to perform another operation? [Y/n]: ").strip().lower()
         if ask_user == "y":
             break
         elif ask_user == "n":
