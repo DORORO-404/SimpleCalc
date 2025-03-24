@@ -1,1 +1,1 @@
-# A simple calculator for beginner programmers in Python.
+# Simple calculator for beginner programmers in Python
