@@ -1,4 +1,4 @@
-print("\033[1;31m[+] ====== Welcome To Advanced Calculator ====== [+]\033[0m")
+print("\033[1;31m[+] ====== Welcome To SimpleCalc ====== [+]\033[0m")
 
 while True:
     # Input the first number
