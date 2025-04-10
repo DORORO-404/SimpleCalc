@@ -1,11 +1,29 @@
 # ===== SimpleCalc Advanced Calculator =====
 
-# ANSI Escape Codes for color formatting (to color the output in terminal)
+import pyfiglet
+
+# ANSI Escape Codes for color formatting
 RED = "\033[1;31m"
 GREEN = "\033[1;32m"
 YELLOW = "\033[1;33m"
 BLUE = "\033[1;34m"
+CYAN = "\033[1;36m"
+MAGENTA = "\033[1;35m"
 RESET = "\033[0m"
+
+# Show fancy banner using pyfiglet
+def print_banner():
+    ascii_banner = pyfiglet.figlet_format("SimpleCalc")
+    print(f"{MAGENTA}{ascii_banner}{RESET}")
+    box = f"""{CYAN}
+  ╔═══════════════════════════════════════╗
+  ║     {MAGENTA}SimpleCalc - Advanced Calculator{CYAN}  ║
+  ║     {MAGENTA}Developed by: DORORO{CYAN}              ║
+  ║     {MAGENTA}Github: DORORO-404{CYAN}                ║
+  ║     {MAGENTA}Version: 1.0{CYAN}                      ║
+  ╚═══════════════════════════════════════╝{RESET}
+    """
+    print(box)
 
 # Display the calculator title in styled format
 def print_title():
@@ -51,7 +69,6 @@ def show_result(num1, op, num2):
         result = num1 * num2
     elif op == "/":
         result = num1 / num2
-
     print(f"{GREEN}✅ Result: {num1} {op} {num2} = {result}{RESET}")
 
 # Ask the user if they want to perform another calculation
@@ -68,6 +85,7 @@ def ask_user():
 
 # Main function to control the program flow
 def main():
+    print_banner()
     print_title()
     while True:
         num1 = get_first_number()
@@ -77,7 +95,5 @@ def main():
         if not ask_user():
             break
 
-# Program entry point
 if __name__ == "__main__":
     main()
-    
