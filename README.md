@@ -1,14 +1,14 @@
-# Python Calculator - Simple Command-Line Calculator
+# SimpleCalc - Command-Line Calculator
 
 ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  
 ![License](https://img.shields.io/badge/license-MIT-blue)  
 ![Python Version](https://img.shields.io/badge/python-3.x+-blue)
 
-Welcome to **Python Calculator**, a simple and easy-to-use command-line calculator built with Python.
+Welcome to **SimpleCalc**, a simple and easy-to-use command-line calculator built with Python.
 
 ## 🚀 About The Project
 
-This is a basic calculator built using Python, designed for performing simple arithmetic operations directly from the terminal. The calculator supports the following operations:
+**SimpleCalc** is a basic calculator built using Python, designed for performing simple arithmetic operations directly from the terminal. The calculator supports the following operations:
 
 - Addition (+)
 - Subtraction (-)
@@ -32,3 +32,47 @@ The tool can be expanded easily to include more advanced mathematical functions.
 - ✅ User-friendly terminal interface
 - ✅ Supports decimal and integer inputs
 - ✅ Works offline, no dependencies
+
+## 📦 Installation
++ ```bash
+1. Clone the repository:
+git clone https://github.com/DORORO-404/SimpleCalc.git
+
+2. Navigate to the project directory:
+cd SimpleCalc
+
+3. Run the calculator:
+python3 simplecalc.py
++ ```
+
+## 🖥️ Example Usage
+
+Once the calculator script is running, you can use the following commands:
+
++ ```bash
+Enter the first number: 5 
+Enter operation (+, -, *, /): + 
+Enter the second number: 3
+
+Result: 5.0 + 3.0 = 8.0
+
+Do you want to perform another calculation? [Y/n]:
++ ```
+
+You can exit the calculator at any time by typing `exit`.
+
+## 🤝 Contributing
+
+Contributions are always welcome! Here’s how you can contribute:
+
+1. Fork the repository.
+2. Create your branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Feel free to open issues for any bugs or feature requests.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
