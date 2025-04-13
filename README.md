@@ -56,8 +56,6 @@ Result: 8.0 + 8.0 = 16.0
 Do you want to perform another calculation? [Y/n]:
 ```
 
-You can exit the calculator at any time by typing `exit`.
-
 ## 🤝 Contributing
 
 Contributions are always welcome! Here’s how you can contribute:
@@ -73,3 +71,12 @@ Feel free to open issues for any bugs or feature requests.
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📁 Project Structure
+```bash
+SimpleCalc/
+├── simplecalc.py          # Main Python script for the Advanced Calculator
+├── README.md              # Project documentation
+├── LICENSE                # MIT License file
+└── requirements.txt       # List of required Python packages
+```
