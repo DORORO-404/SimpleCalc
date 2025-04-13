@@ -3,7 +3,6 @@
 # === Import necessary modules ===
 import pyfiglet
 import sys
-import os
 
 # === ANSI colors ===
 RED = "\033[91m"
