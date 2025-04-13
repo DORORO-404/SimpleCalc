@@ -46,11 +46,12 @@ python3 simplecalc.py
 Once the calculator script is running, you can use the following commands:
 
 ```bash
-Enter the first number: 5 
-Enter operation (+, -, *, /): + 
-Enter the second number: 3
+[+] ===== Welcome to SimpleCalc Advanced Calculator ===== [+]
+Enter the first number: 8
+Enter operation (+, -, *, /, **): +
+Enter the second number: 8
 
-Result: 5.0 + 3.0 = 8.0
+Result: 8.0 + 8.0 = 16.0
 
 Do you want to perform another calculation? [Y/n]:
 ```
