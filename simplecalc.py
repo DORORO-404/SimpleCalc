@@ -14,15 +14,11 @@ CYAN = "\033[96m"
 RESET = "\033[0m"
 
 # === Version info ===
-VERSION = "1.2"
-
-# === Clear screen based on OS ===
-def clear_screen():
-    os.system("cls" if os.name == "nt" else "clear")
+VERSION = "1.3"
 
 # === Print banner using pyfiglet ===
 def print_banner():
-    ascii_banner = pyfiglet.figlet_format("  SimpleCalc")
+    ascii_banner = pyfiglet.figlet_format("\n\n  SimpleCalc")
     print(f"{MAGENTA}{ascii_banner}{RESET}")
     box = f"""{CYAN}
   ╔═══════════════════════════════════════╗
@@ -36,7 +32,7 @@ def print_banner():
 
 # === Show a welcome message ===
 def print_title():
-    print(f"{RED}[+] ===== {CYAN}Welcome to SimpleCalc Advanced Calculator{RED} ===== [+]{RESET}")
+    print(f"\n{RED}[+] ===== {CYAN}Welcome to SimpleCalc Advanced Calculator{RED} ===== [+]{RESET}")
 
 # === Exit safely with a message ===
 def exit_program():
@@ -65,8 +61,8 @@ def get_number(prompt_text):
 # === Ask for an operation from the user ===
 def get_operation():
     while True:
-        op = safe_input(f"{YELLOW}Enter operation (+, -, *, /): {RESET}")
-        if op in ["+", "-", "*", "/"]:
+        op = safe_input(f"{YELLOW}Enter operation (+, -, *, /, **): {RESET}")
+        if op in ["+", "-", "*", "/", "**"]:
             return op
         else:
             print(f"{RED}Invalid operator. Use one of (+, -, *, /).{RESET}")
@@ -91,6 +87,8 @@ def show_result(num1, op, num2):
         result = num1 * num2
     elif op == "/":
         result = num1 / num2
+    elif op == "**":
+        result = num1 ** num2
     print(f"\n{GREEN}Result: {num1} {op} {num2} = {result}{RESET}")
 
 # === Ask if user wants to calculate again ===
@@ -111,9 +109,9 @@ def main():
         print(f"{CYAN}SimpleCalc Version: {VERSION}{RESET}")
         sys.exit()
 
+    print_banner()
+
     while True:
-        clear_screen()
-        print_banner()
         print_title()
 
         num1 = get_number("Enter the first number: ")

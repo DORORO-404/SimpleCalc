@@ -36,9 +36,8 @@ The tool can be expanded easily to include more advanced mathematical functions.
 ## 📦 Installation
 ```bash
 git clone https://github.com/DORORO-404/SimpleCalc.git
-
 cd SimpleCalc
-
+pip install -r requirements.txt
 python3 simplecalc.py
 ```
 
