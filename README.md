@@ -34,7 +34,7 @@ The tool can be expanded easily to include more advanced mathematical functions.
 - ✅ Works offline, no dependencies
 
 ## 📦 Installation
-+ ```bash
+```bash
 1. Clone the repository:
 git clone https://github.com/DORORO-404/SimpleCalc.git
 
@@ -43,13 +43,13 @@ cd SimpleCalc
 
 3. Run the calculator:
 python3 simplecalc.py
-+ ```
+```
 
 ## 🖥️ Example Usage
 
 Once the calculator script is running, you can use the following commands:
 
-+ ```bash
+```bash
 Enter the first number: 5 
 Enter operation (+, -, *, /): + 
 Enter the second number: 3
@@ -57,7 +57,7 @@ Enter the second number: 3
 Result: 5.0 + 3.0 = 8.0
 
 Do you want to perform another calculation? [Y/n]:
-+ ```
+```
 
 You can exit the calculator at any time by typing `exit`.
 
