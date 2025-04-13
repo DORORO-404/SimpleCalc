@@ -35,13 +35,10 @@ The tool can be expanded easily to include more advanced mathematical functions.
 
 ## 📦 Installation
 ```bash
-1. Clone the repository:
 git clone https://github.com/DORORO-404/SimpleCalc.git
 
-2. Navigate to the project directory:
 cd SimpleCalc
 
-3. Run the calculator:
 python3 simplecalc.py
 ```
 
